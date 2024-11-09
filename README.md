@@ -1,4 +1,4 @@
-#WebCalling
+# WebCalling
 
 This project is about using Freeswitch as the IP PBX and using webcalling as the mechanism for the users to make calls. 
 One end is a zoiper client who has logged in as 1001
@@ -8,7 +8,7 @@ UI is created using ReactJs 20, Bootstrap 5 and SIP.js.
 IPPBX used is FreeSwitch installed on a windows 11.
 
 The screenshots along with SIP messages are as follows:-
-##Login Screen
+## Login Screen
 ![image](https://github.com/user-attachments/assets/6e384af2-d028-4155-90cc-65618b690fba)
 The moment Initialize Calling button is clicked. It sends the following SIP Messages over websocket connection to FreeSwitch
 
@@ -79,10 +79,10 @@ User-Agent: SIP.js/0.21.1
 Content-Length: 0
 ```
 
-User Idle Screen - Now we get the user IDLE screen.
+## User Idle Screen - Now we get the user IDLE screen.
 ![image](https://github.com/user-attachments/assets/b3cddf58-0120-484b-a333-8dabbc3f203b)
 
-New Call Screen - Now when we make a new call
+## New Call Screen - Now when we make a new call
 ![image](https://github.com/user-attachments/assets/102b1eb8-325e-4869-aa98-e63b7f8b008d)
 ```
 sip.Transport | Sending WebSocket message:
@@ -209,7 +209,7 @@ a=ssrc:1765432789 msid:XGVxbPxo9KKR5XawpNcZrOMAwH0DOR6u a0
 a=ssrc:1765432789 mslabel:XGVxbPxo9KKR5XawpNcZrOMAwH0DOR6u
 a=ssrc:1765432789 label:XGVxbPxo9KKR5XawpNcZrOMAwH0DOR6ua0
 ```
-Call in Progress
+## Call in Progress
 ![image](https://github.com/user-attachments/assets/658baa72-a9c2-4970-abe6-8f7c9ec68376)
 
 ```
@@ -256,7 +256,7 @@ a=ssrc:1765432789 label:XGVxbPxo9KKR5XawpNcZrOMAwH0DOR6ua0
 Call is Answered
 ![image](https://github.com/user-attachments/assets/a5105f1b-d814-40fe-8ef0-aff2e5007b28)
 
-Call is put on Hold by clicking on the Hold button
+## Call is put on Hold by clicking on the Hold button
 ![image](https://github.com/user-attachments/assets/a4091d3e-d7ab-4dc3-83f9-6e8228f346a1)
 ```
 sip.Transport | Sending WebSocket message:
@@ -382,7 +382,7 @@ a=ssrc:1765302158 mslabel:GmV5Mj4VMynFYdHRWIFQDojvaabXfd5i
 a=ssrc:1765302158 label:GmV5Mj4VMynFYdHRWIFQDojvaabXfd5ia0
 ```
 
-Call is resumed
+## Call is resumed
 ![image](https://github.com/user-attachments/assets/f7fcbe0b-faac-42fd-9c06-62752913710c)
 ```
 sip.Transport | Sending WebSocket message:
