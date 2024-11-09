@@ -10,6 +10,7 @@ IPPBX used is FreeSwitch installed on a windows 11.
 The screenshots along with SIP messages are as follows:-
 ## Login Screen
 ![image](https://github.com/user-attachments/assets/6e384af2-d028-4155-90cc-65618b690fba)
+
 The moment Initialize Calling button is clicked. It sends the following SIP Messages over websocket connection to FreeSwitch
 
 ```
