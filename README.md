@@ -254,11 +254,14 @@ a=ssrc:1765432789 cname:p85Y0A7Jv9E6dBmH
 a=ssrc:1765432789 msid:XGVxbPxo9KKR5XawpNcZrOMAwH0DOR6u a0
 a=ssrc:1765432789 mslabel:XGVxbPxo9KKR5XawpNcZrOMAwH0DOR6u
 a=ssrc:1765432789 label:XGVxbPxo9KKR5XawpNcZrOMAwH0DOR6ua0
-Call is Answered
+```
+
+## Call is Answered
 ![image](https://github.com/user-attachments/assets/a5105f1b-d814-40fe-8ef0-aff2e5007b28)
 
 ## Call is put on Hold by clicking on the Hold button
 ![image](https://github.com/user-attachments/assets/a4091d3e-d7ab-4dc3-83f9-6e8228f346a1)
+
 ```
 sip.Transport | Sending WebSocket message:
 INVITE sip:1001@10.105.10.116:5060;transport=udp SIP/2.0
@@ -385,6 +388,7 @@ a=ssrc:1765302158 label:GmV5Mj4VMynFYdHRWIFQDojvaabXfd5ia0
 
 ## Call is resumed
 ![image](https://github.com/user-attachments/assets/f7fcbe0b-faac-42fd-9c06-62752913710c)
+
 ```
 sip.Transport | Sending WebSocket message:
 INVITE sip:1001@10.105.10.116:5060;transport=udp SIP/2.0
