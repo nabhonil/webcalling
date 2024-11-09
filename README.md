@@ -84,8 +84,8 @@ User Idle Screen - Now we get the user IDLE screen.
 
 New Call Screen - Now when we make a new call
 ![image](https://github.com/user-attachments/assets/102b1eb8-325e-4869-aa98-e63b7f8b008d)
+```
 sip.Transport | Sending WebSocket message:
-
 INVITE sip:1001@10.105.10.116:5060 SIP/2.0
 Via: SIP/2.0/WS 7bhs9fl1c2ll.invalid;branch=z9hG4bK8808481
 To: <sip:1001@10.105.10.116:5060>
@@ -154,7 +154,8 @@ a=ssrc:108159796 cname:tu3dLth+U1DsgX10
 a=ssrc:108159796 msid:67b12fa8-c181-4f0d-a390-56c19bd07a67 441444ae-0dc1-4306-9bc8-5d5271519062
 a=ssrc:108159796 mslabel:67b12fa8-c181-4f0d-a390-56c19bd07a67
 a=ssrc:108159796 label:441444ae-0dc1-4306-9bc8-5d5271519062
-
+```
+```
 sip.Transport | Received WebSocket text message:
 SIP/2.0 100 Trying
 Via: SIP/2.0/WS 7bhs9fl1c2ll.invalid;branch=z9hG4bK8808481;received=10.105.10.116;rport=44539
@@ -164,7 +165,8 @@ Call-ID: gekleie1ceg925i9u7qp
 CSeq: 2 INVITE
 User-Agent: FreeSWITCH-mod_sofia/1.10.12-release~a88d069d6f~64bit
 Content-Length: 0
-
+```
+```
 sip.Transport | Received WebSocket text message:
 SIP/2.0 183 Session Progress
 Via: SIP/2.0/WS 7bhs9fl1c2ll.invalid;branch=z9hG4bK8808481;received=10.105.10.116;rport=44539
@@ -206,13 +208,11 @@ a=ssrc:1765432789 cname:p85Y0A7Jv9E6dBmH
 a=ssrc:1765432789 msid:XGVxbPxo9KKR5XawpNcZrOMAwH0DOR6u a0
 a=ssrc:1765432789 mslabel:XGVxbPxo9KKR5XawpNcZrOMAwH0DOR6u
 a=ssrc:1765432789 label:XGVxbPxo9KKR5XawpNcZrOMAwH0DOR6ua0
-
+```
 Call in Progress
 ![image](https://github.com/user-attachments/assets/658baa72-a9c2-4970-abe6-8f7c9ec68376)
 
-Call is Answered
-![image](https://github.com/user-attachments/assets/a5105f1b-d814-40fe-8ef0-aff2e5007b28)
-
+```
 sip.Transport | Received WebSocket text message:
 SIP/2.0 200 OK
 Via: SIP/2.0/WS 7bhs9fl1c2ll.invalid;branch=z9hG4bK8808481;received=10.105.10.116;rport=44539
@@ -253,10 +253,12 @@ a=ssrc:1765432789 cname:p85Y0A7Jv9E6dBmH
 a=ssrc:1765432789 msid:XGVxbPxo9KKR5XawpNcZrOMAwH0DOR6u a0
 a=ssrc:1765432789 mslabel:XGVxbPxo9KKR5XawpNcZrOMAwH0DOR6u
 a=ssrc:1765432789 label:XGVxbPxo9KKR5XawpNcZrOMAwH0DOR6ua0
+Call is Answered
+![image](https://github.com/user-attachments/assets/a5105f1b-d814-40fe-8ef0-aff2e5007b28)
 
-Call is put on Hold
+Call is put on Hold by clicking on the Hold button
 ![image](https://github.com/user-attachments/assets/a4091d3e-d7ab-4dc3-83f9-6e8228f346a1)
-
+```
 sip.Transport | Sending WebSocket message:
 INVITE sip:1001@10.105.10.116:5060;transport=udp SIP/2.0
 Via: SIP/2.0/WS 7bhs9fl1c2ll.invalid;branch=z9hG4bK4683819
@@ -325,7 +327,8 @@ a=ssrc:426922351 cname:8dqqSraI1Xmet35Y
 a=ssrc:426922351 msid:a13f7147-955e-49fa-b11b-49c2dd95a354 688e8f60-a748-4635-8e0f-8620e84765a8
 a=ssrc:426922351 mslabel:a13f7147-955e-49fa-b11b-49c2dd95a354
 a=ssrc:426922351 label:688e8f60-a748-4635-8e0f-8620e84765a8
-
+```
+```
 sip.Transport | Received WebSocket text message:
 SIP/2.0 100 Trying
 Via: SIP/2.0/WS 7bhs9fl1c2ll.invalid;branch=z9hG4bK4683819;received=10.105.10.116;rport=44539
@@ -335,9 +338,9 @@ Call-ID: gekleigjlti4sjlsh3mm
 CSeq: 3 INVITE
 User-Agent: FreeSWITCH-mod_sofia/1.10.12-release~a88d069d6f~64bit
 Content-Length: 0
-
+```
+```
 sip.Transport | Received WebSocket text message:
-
 SIP/2.0 200 OK
 Via: SIP/2.0/WS 7bhs9fl1c2ll.invalid;branch=z9hG4bK4683819;received=10.105.10.116;rport=44539
 From: "1002" <sip:1002@10.105.10.116:5060>;tag=pf8jbtir6h
@@ -377,10 +380,11 @@ a=ssrc:1765302158 cname:MEGPZMdnyrV3dzOR
 a=ssrc:1765302158 msid:GmV5Mj4VMynFYdHRWIFQDojvaabXfd5i a0
 a=ssrc:1765302158 mslabel:GmV5Mj4VMynFYdHRWIFQDojvaabXfd5i
 a=ssrc:1765302158 label:GmV5Mj4VMynFYdHRWIFQDojvaabXfd5ia0
+```
 
 Call is resumed
 ![image](https://github.com/user-attachments/assets/f7fcbe0b-faac-42fd-9c06-62752913710c)
-
+```
 sip.Transport | Sending WebSocket message:
 INVITE sip:1001@10.105.10.116:5060;transport=udp SIP/2.0
 Via: SIP/2.0/WS 7bhs9fl1c2ll.invalid;branch=z9hG4bK5174938
@@ -449,7 +453,8 @@ a=ssrc:426922351 cname:8dqqSraI1Xmet35Y
 a=ssrc:426922351 msid:a13f7147-955e-49fa-b11b-49c2dd95a354 688e8f60-a748-4635-8e0f-8620e84765a8
 a=ssrc:426922351 mslabel:a13f7147-955e-49fa-b11b-49c2dd95a354
 a=ssrc:426922351 label:688e8f60-a748-4635-8e0f-8620e84765a8
-
+```
+```
 sip.Transport | Received WebSocket text message:
 SIP/2.0 100 Trying
 Via: SIP/2.0/WS 7bhs9fl1c2ll.invalid;branch=z9hG4bK5174938;received=10.105.10.116;rport=44539
@@ -459,9 +464,9 @@ Call-ID: gekleigjlti4sjlsh3mm
 CSeq: 4 INVITE
 User-Agent: FreeSWITCH-mod_sofia/1.10.12-release~a88d069d6f~64bit
 Content-Length: 0
-
+```
+```
 sip.Transport | Received WebSocket text message:
-
 SIP/2.0 200 OK
 Via: SIP/2.0/WS 7bhs9fl1c2ll.invalid;branch=z9hG4bK5174938;received=10.105.10.116;rport=44539
 From: "1002" <sip:1002@10.105.10.116:5060>;tag=pf8jbtir6h
@@ -500,7 +505,8 @@ a=ssrc:1765302158 cname:MEGPZMdnyrV3dzOR
 a=ssrc:1765302158 msid:GmV5Mj4VMynFYdHRWIFQDojvaabXfd5i a0
 a=ssrc:1765302158 mslabel:GmV5Mj4VMynFYdHRWIFQDojvaabXfd5i
 a=ssrc:1765302158 label:GmV5Mj4VMynFYdHRWIFQDojvaabXfd5ia0
-
+```
+```
 sip.Transport | Sending WebSocket message:
 ACK sip:1001@10.105.10.116:5060;transport=udp SIP/2.0
 Via: SIP/2.0/WS 7bhs9fl1c2ll.invalid;branch=z9hG4bK6268568
@@ -512,3 +518,4 @@ Max-Forwards: 70
 Supported: outbound
 User-Agent: SIP.js/0.21.1
 Content-Length: 0
+```
