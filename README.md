@@ -12,67 +12,72 @@ The screenshots along with SIP messages are as follows:-
 ![image](https://github.com/user-attachments/assets/6e384af2-d028-4155-90cc-65618b690fba)
 The moment Initialize Calling button is clicked. It sends the following SIP Messages over websocket connection to FreeSwitch
 
->sip.Transport | Sending WebSocket message:
->REGISTER sip:10.105.10.116:5060 SIP/2.0
->Via: SIP/2.0/WS 7bhs9fl1c2ll.invalid;branch=z9hG4bK491249
->To: <sip:1002@10.105.10.116:5060>
->From: "1002" <sip:1002@10.105.10.116:5060>;tag=pfkt19pi9d
->CSeq: 3 REGISTER
->Call-ID: geklegd7iobftuch3i2a
->Max-Forwards: 70
->Authorization: Digest algorithm=MD5, username="1002", realm="10.105.10.116", nonce="7954bbe7-65e1-4777-a33b-0aa03f1ed316", uri="sip:10.105.10.116:5060", response="959fbcd0b92feab202316a1b469155f3", qop=auth, cnonce="2aohihbpvp6q", nc=00000001
->Contact: <sip:8bum4n4l@7bhs9fl1c2ll.invalid;transport=ws>;expires=600
->Allow: ACK,CANCEL,INVITE,MESSAGE,BYE,OPTIONS,INFO,NOTIFY,REFER
->Supported: outbound, path, gruu
->User-Agent: SIP.js/0.21.1
->Content-Length: 0
-
->sip.Transport | Received WebSocket text message:
->SIP/2.0 200 OK
->Via: SIP/2.0/WS 7bhs9fl1c2ll.invalid;branch=z9hG4bK491249;received=10.105.10.116;rport=44539
->From: "1002" <sip:1002@10.105.10.116:5060>;tag=pfkt19pi9d
->To: <sip:1002@10.105.10.116:5060>;tag=Zg66rjDajv8cN
->Call-ID: geklegd7iobftuch3i2a
->CSeq: 3 REGISTER
->Contact: <sip:8bum4n4l@7bhs9fl1c2ll.invalid;transport=ws>;expires=600
->Date: Sat, 09 Nov 2024 14:16:35 GMT
->User-Agent: FreeSWITCH-mod_sofia/1.10.12-release~a88d069d6f~64bit
->Allow: INVITE, ACK, BYE, CANCEL, OPTIONS, MESSAGE, INFO, UPDATE, REGISTER, REFER, NOTIFY, PUBLISH, SUBSCRIBE
->Supported: timer, path, replaces
->Content-Length: 0
-
+```
+sip.Transport | Sending WebSocket message:
+REGISTER sip:10.105.10.116:5060 SIP/2.0
+Via: SIP/2.0/WS 7bhs9fl1c2ll.invalid;branch=z9hG4bK491249
+To: <sip:1002@10.105.10.116:5060>
+From: "1002" <sip:1002@10.105.10.116:5060>;tag=pfkt19pi9d
+CSeq: 3 REGISTER
+Call-ID: geklegd7iobftuch3i2a
+Max-Forwards: 70
+Authorization: Digest algorithm=MD5, username="1002", realm="10.105.10.116", nonce="7954bbe7-65e1-4777-a33b-0aa03f1ed316", uri="sip:10.105.10.116:5060", response="959fbcd0b92feab202316a1b469155f3", qop=auth, cnonce="2aohihbpvp6q", nc=00000001
+Contact: <sip:8bum4n4l@7bhs9fl1c2ll.invalid;transport=ws>;expires=600
+Allow: ACK,CANCEL,INVITE,MESSAGE,BYE,OPTIONS,INFO,NOTIFY,REFER
+Supported: outbound, path, gruu
+User-Agent: SIP.js/0.21.1
+Content-Length: 0
+```
+```
+sip.Transport | Received WebSocket text message:
+SIP/2.0 200 OK
+Via: SIP/2.0/WS 7bhs9fl1c2ll.invalid;branch=z9hG4bK491249;received=10.105.10.116;rport=44539
+From: "1002" <sip:1002@10.105.10.116:5060>;tag=pfkt19pi9d
+To: <sip:1002@10.105.10.116:5060>;tag=Zg66rjDajv8cN
+Call-ID: geklegd7iobftuch3i2a
+CSeq: 3 REGISTER
+Contact: <sip:8bum4n4l@7bhs9fl1c2ll.invalid;transport=ws>;expires=600
+Date: Sat, 09 Nov 2024 14:16:35 GMT
+User-Agent: FreeSWITCH-mod_sofia/1.10.12-release~a88d069d6f~64bit
+Allow: INVITE, ACK, BYE, CANCEL, OPTIONS, MESSAGE, INFO, UPDATE, REGISTER, REFER, NOTIFY, PUBLISH, SUBSCRIBE
+Supported: timer, path, replaces
+Content-Length: 0
+```
 Once it is registered, FreeSwitch Sends the Notify with more capabilities
->sip.Transport | Received WebSocket text message:
->NOTIFY sip:8bum4n4l@7bhs9fl1c2ll.invalid;transport=ws SIP/2.0
->Via: SIP/2.0/WS 10.105.10.116:5066;branch=z9hG4bKv5mm130UjScvS
->Route: <sip:8bum4n4l@10.105.10.116:44539>;transport=ws
->Max-Forwards: 70
->From: <sip:1002@10.105.10.116>;tag=0SZZtDyDF5yZg
->To: <sip:1002@10.105.10.116>
->Call-ID: 11a73f02-1948-123e-3390-21c4164d317f
->CSeq: 91027105 NOTIFY
->Contact: <sip:mod_sofia@10.105.10.116:5060>
->User-Agent: FreeSWITCH-mod_sofia/1.10.12-release~a88d069d6f~64bit
->Allow: INVITE, ACK, BYE, CANCEL, OPTIONS, MESSAGE, INFO, UPDATE, REGISTER, REFER, NOTIFY, PUBLISH, SUBSCRIBE
->Supported: timer, path, replaces
->Event: message-summary
->Allow-Events: talk, hold, conference, presence, as-feature-event, dialog, line-seize, call-info, sla, include-session-description, presence.winfo, message-summary, refer
->Subscription-State: terminated;reason=noresource
->Content-Type: application/simple-message-summary
->Content-Length: 65
->Messages-Waiting: no
->Message-Account: sip:1002@10.105.10.116
-
->sip.Transport | Sending WebSocket message:
->SIP/2.0 200 OK
->Via: SIP/2.0/WS 10.105.10.116:5066;branch=z9hG4bKv5mm130UjScvS
->From: <sip:1002@10.105.10.116>;tag=0SZZtDyDF5yZg
->To: <sip:1002@10.105.10.116>;tag=nsgpq566tg
->CSeq: 91027105 NOTIFY
->Call-ID: 11a73f02-1948-123e-3390-21c4164d317f
->Supported: outbound
->User-Agent: SIP.js/0.21.1
->Content-Length: 0
+```
+sip.Transport | Received WebSocket text message:
+NOTIFY sip:8bum4n4l@7bhs9fl1c2ll.invalid;transport=ws SIP/2.0
+Via: SIP/2.0/WS 10.105.10.116:5066;branch=z9hG4bKv5mm130UjScvS
+Route: <sip:8bum4n4l@10.105.10.116:44539>;transport=ws
+Max-Forwards: 70
+From: <sip:1002@10.105.10.116>;tag=0SZZtDyDF5yZg
+To: <sip:1002@10.105.10.116>
+Call-ID: 11a73f02-1948-123e-3390-21c4164d317f
+CSeq: 91027105 NOTIFY
+Contact: <sip:mod_sofia@10.105.10.116:5060>
+User-Agent: FreeSWITCH-mod_sofia/1.10.12-release~a88d069d6f~64bit
+Allow: INVITE, ACK, BYE, CANCEL, OPTIONS, MESSAGE, INFO, UPDATE, REGISTER, REFER, NOTIFY, PUBLISH, SUBSCRIBE
+Supported: timer, path, replaces
+Event: message-summary
+Allow-Events: talk, hold, conference, presence, as-feature-event, dialog, line-seize, call-info, sla, include-session-description, presence.winfo, message-summary, refer
+Subscription-State: terminated;reason=noresource
+Content-Type: application/simple-message-summary
+Content-Length: 65
+Messages-Waiting: no
+Message-Account: sip:1002@10.105.10.116
+```
+```
+sip.Transport | Sending WebSocket message:
+SIP/2.0 200 OK
+Via: SIP/2.0/WS 10.105.10.116:5066;branch=z9hG4bKv5mm130UjScvS
+From: <sip:1002@10.105.10.116>;tag=0SZZtDyDF5yZg
+To: <sip:1002@10.105.10.116>;tag=nsgpq566tg
+CSeq: 91027105 NOTIFY
+Call-ID: 11a73f02-1948-123e-3390-21c4164d317f
+Supported: outbound
+User-Agent: SIP.js/0.21.1
+Content-Length: 0
+```
 
 User Idle Screen - Now we get the user IDLE screen.
 ![image](https://github.com/user-attachments/assets/b3cddf58-0120-484b-a333-8dabbc3f203b)
