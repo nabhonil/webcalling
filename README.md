@@ -2,7 +2,12 @@ WebCalling
 
 This project is about using Freeswitch as the IP PBX and using webcalling as the mechanism for the users to make calls. 
 One end is a zoiper client who has logged in as 1001
-and another end is the WebRTC phone 1002. The screenshots are shown below
+and another end is the WebRTC phone 1002. 
+
+UI is created using ReactJs 20, Bootstrap 5 and SIP.js
+IPPBX used is FreeSwitch installed on a windows 11.
+
+The screenshots are shown below
 
 User Idle Screen
 ![image](https://github.com/user-attachments/assets/a3c307a3-386c-4537-b328-24766e929298)
